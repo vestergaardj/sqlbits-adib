@@ -1,14 +1,25 @@
+# Create Synapse Analytics Workspace
+
 **Basic**
+
+Select: *<resource group created in step 01>*
+
 Managed resource group: optional (for aux resources)
-Name:   
-region: <same as above?>
+
+Workspace Name: newport-ws   
+region: *<same as step 01>*
 
 Select Data Lake Storage Gen2: From Subscription
-Account: (new) newportdemosa
 
-File System Name: (new) data
+Account: *(new) newportdemosa*
 
-Check "Assign myself the Storage Blob Data Contributor role on the Data Lake Storage Gen2 account to interactively query it in the workspace."
+File System Name: *(new) data*
+
+Check *"Assign myself the Storage Blob Data Contributor role on the Data Lake Storage Gen2 account to interactively query it in the workspace."*
+
+**Screenshot**
+
+![Wizard](./assets/images/02.setup.synapseanalytics.png)
 
 **Security**
 
