@@ -1,4 +1,4 @@
-*Name*: chicago_demo
+*Name*: newport_demo
 
 *Region*: optional
 
