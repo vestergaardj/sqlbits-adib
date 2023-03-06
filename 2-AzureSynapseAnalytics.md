@@ -11,7 +11,7 @@ region: *<same as step 01>*
 
 Select Data Lake Storage Gen2: From Subscription
 
-Account: *(new) newportdemosa*
+Account: *(new) newportsa*
 
 File System Name: *(new) data*
 
