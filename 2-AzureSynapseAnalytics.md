@@ -4,7 +4,7 @@ Name:
 region: <same as above?>
 
 Select Data Lake Storage Gen2: From Subscription
-Account: (new) chicagodemosa
+Account: (new) newportdemosa
 
 File System Name: (new) data
 
