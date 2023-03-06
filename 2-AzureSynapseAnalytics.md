@@ -29,7 +29,7 @@ All other options: leave as is
 
 Tags: Owner, State, Purpose
 
-## Updload Data
+## Upload Data
 
 Open Azure Storage Explorer (or upload via Azure Portal, not preferred)
 
