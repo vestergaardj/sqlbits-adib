@@ -1,14 +1,14 @@
 ## Create you first Azure Data Factory ( < 5 min )
 
-Go to resource group created above
+Go to resource group created in earlier step
 
 Add new resource: Data Factory
 
 **Basic**
 
-Select name: chicago-demo-df
+Select name: newport-demo-df
 
-Region: select as above (moving data across regions has a cost)
+Region: select same region as storage account (moving data across regions has a cost)
 
 Version: leave as is
 
@@ -26,7 +26,7 @@ Touch nothing, seriously!
 
 **Tags**
 
-Tags: Owner, Status, Purpose
+Tags: Owner, State, Purpose
 
 **Review and Create**
 
