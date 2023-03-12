@@ -1,10 +1,14 @@
 ## Create your first Data Flow ( < 10 min ) (Enriched)
 
+From Azure Portal: Click *Launch Studio* (new window opens)
+
+Click: *Author* (right side menu, crayon 🖍️)
+
+Click *'+'* /Data flow/Data flow
+
 Toogle *Data flow debug* ON
 
-Click *Author*
-
-Click *'+'/Data flow/Data flow
+Click: *OK* button
 
 Rename: Enrich Crime
 
