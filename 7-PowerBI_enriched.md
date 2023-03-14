@@ -52,6 +52,10 @@ Set data category Longitude for column *Longitude*
 
 Set data category Latitude for column *Latitude*
 
+Set *Summarization* for column *District* to *Don't summarize*
+
+Set *Summarization* for column *Community Area* to *Don't summarize*
+
 Click the ... on the table and select *New measure*
 
 Type in: Incidents = CALCULATE( COUNT( Enriched[ID] ))
@@ -72,14 +76,14 @@ Create a *Map* visualization
 
 Maximize the visual on the canvas
 
-Select *Latitude* for Latitude and change aggregation to *Don't summarize*
+Select *Latitude* for Latitude
 
-Select *Longitude* for Longitude and change aggregation to *Don't summarize*
+Select *Longitude* for Longitude
 
 Select *Incidents* for Bubble Size
 
-Optionally select *Primary Type* as 
+Optionally select *Primary Type* as Legend
 
 Observe differences in bubble size
 
-Observe longitude/latitude has outliers
+Observe if longitude/latitude has outliers
