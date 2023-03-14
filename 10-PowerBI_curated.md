@@ -1,4 +1,4 @@
-## Create a sample Power BI report
+# Create a sample Power BI report
 
 Open Power BI Desktop
 
@@ -54,6 +54,10 @@ Set data category Longitude for column *Longitude*
 
 Set data category Latitude for column *Latitude*
 
+Set Summarization for column CommunityArea to *Don't summarize*
+
+Set Summarization for column District to *Don't summarize*
+
 Click the ... on the table and select *New measure*
 
 Type in: Incidents = CALCULATE( COUNT( Curated[ID] ))
@@ -62,21 +66,9 @@ Validate the calculation by clicking the V
 
 Select the *Report* pane
 
-Select *District* as Page Filter
-
-Select only District = 1
-
-Select *Community Area* as Page Filter
-
-Select only Community Area = 32
-
 Create a *Map* visualization
 
 Maximize the visual on the canvas
-
-Select *Latitude* for Latitude and change aggregation to *Don't summarize*
-
-Select *Longitude* for Longitude and change aggregation to *Don't summarize*
 
 Select *Incidents* for Bubble Size
 
@@ -84,4 +76,4 @@ Optionally select *Primary Type* as
 
 Observe differences in bubble size
 
-Observe longitude/latitude has outliers
+Observe longitude/latitude has no outliers
