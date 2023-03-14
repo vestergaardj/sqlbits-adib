@@ -1,4 +1,36 @@
-## Create you first Serverless Pool Table
+# Create you first Serverless Pool Table
+
+## Used *Public Dataset* earlier?
+
+Open Storage Explorer
+
+Navigate to: *ADLS Gen 2 Storage Account Created Earlier*
+
+Click: container *Data*
+
+Navigate to: *Public Dataset* (blob)
+
+Right-Click: container *source-files*
+
+Select: Open in new Tab
+
+Multi-Select: all csv files (crimes and crahses)
+
+Select: Copy (in the ribbon)
+
+Select: the other open tab (*Data* container)
+
+Click: *New folder*
+
+Type: *raw*
+
+Double-Click: *raw* folder 
+
+Click: *Paste* (in the ribbon)
+
+Observe that the data is copied into your *raw* folder in the ADSL Gen2 storage account linked to the Synapse Workspace
+
+## Data is ready
 
 Navigate to the Azure Synapse Analytics resource created above
 
@@ -11,13 +43,13 @@ Navigate to: Data
 
 Navigate to: Linked 
 
-Expand storage account dis-chicago-synapse/chicagodemosa
+Expand storage account *dis-chicago-synapse/chicagodemosa*
 
 Select the 'Data (Primary)'
 
 Double-click the folder 'Raw'
 
-Observe: file named 'Traffic_Crashes_-_Crashes_sample.csv'
+Observe: file named 'Traffic_Crashes_-_Crashes_sample.csv' (found at [city of Chicago]https://data.cityofchicago.org/Transportation/Traffic-Crashes-Vehicles/68nd-jvt3)
 
 Right-click file and select 'New SQL Script/Select Top 100 Rows'
 
