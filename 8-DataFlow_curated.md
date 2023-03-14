@@ -1,4 +1,4 @@
-## Create a data flow to curate the data
+# Create a data flow to curate the data
 
 Ensure *Data flow debug* ON
 
@@ -8,9 +8,10 @@ Click *'+'/Data flow/Data flow
 
 Rename: Curate Crime
 
+## Extract 
 Click Add Source/Add Source
 
-Name: Delta Source
+Name: Delta_Source
 
 Source Type: Inline
 
@@ -18,33 +19,29 @@ Source dataset type: Delta
 
 Linked Services: ADLS_Crime
 
-Set *Sampling* Enabled
+Set *Sampling* **Enabled**
 
-Click *Settings*
+Set Rows Limit = 10
 
-Browse for folder path *data/enriched/crime*
+Click *Source Options*
+
+Browse for folder path *data/enriched/Year=2010*
 
 Select Compression Type: snappy
 
-Click *Projection*
+Click: *Projection*
 
-Click *Import schema*
+Click: *Import schema* (if option is disabled, check to see if *Data flow debug* is enabled)
 
-Click *Optimize*
-
-Set *Partition Option* = *Set partitioning*
-
-Set first key column = Year
-
-Click *'+'* after Year column
-
-Select next key column = Month
+Click: *OK*
 
 Click *Data Preview* 
 
 Click *Refresh*
 
 Observe the data... praise the data!
+
+## Transform
 
 Click *'+'* after the *Delta Source*
 
@@ -62,19 +59,23 @@ Click *Data Preview*
 
 Observe the data :)
 
+## Load
+
 Click *'+'* after the *FilterOutliers* container
 
 Add sink
 
 Rename *Output Stream* = *DeltaTarget*
 
-Set *Sink type* = *Delta*
+Set *Sink type* = *Inline*
+
+Set *Inline dataset type* to 
 
 Set *Linked service* = ADLS_Crime
 
 Click *Settings*
 
-Browse to data/curated/crime
+Browse to data/curated *(if folder does not exist, create it using the Azure Storage Explorer)*
 
 Set *TableAction* = truncate
 
