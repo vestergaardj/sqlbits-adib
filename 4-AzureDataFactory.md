@@ -1,38 +1,43 @@
-## Create you first Azure Data Factory ( < 5 min )
+# Create you first Azure Data Factory ( < 5 min )
 
 Go to resource group created in earlier step
 
-Add new resource: Data Factory
+Click: Create 
 
-**Basic**
+Search for: Data Factory
+
+Clck: *Create/Data Factory*
+
+
+## Basic
 
 Select name: newport-demo-df
 
 Region: select same region as storage account (moving data across regions has a cost)
 
-Version: leave as is
+Version: leave as is (V2, trust me, you don't want V1)
 
-**Git configuration**
+## Git configuration
 
 Check: 'Configure Git Later'
 
-**Networking**
+## Networking
 
 Check: Connect via Public Endpoint
 
-**Advanced**
+## Advanced
 
 Touch nothing, seriously!
 
-**Tags**
+## Tags
 
 Tags: Owner, State, Purpose
 
-**Review and Create**
+## Review and Create
 
 Click 'Create'
 
 
 Once created, click go to resource
 
-Click 'Open Data Factory Studio' (https://adf.azure.com/en)
+Click 'Launch Studio' (https://adf.azure.com/en)
