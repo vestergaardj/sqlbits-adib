@@ -32,7 +32,7 @@ Paste into Account Key in Power BI dialog
 
 Select *Transform Data*
 
-Filter column *Folder Path* to select only a single month
+Filter column *Folder Path* to select only rows that begin with **https://<insert storage account>.dfs.core.windows.net/<insert path>/Year%3D2010**
 
 Click *Combine Files* on the header of the *Content* column
 
