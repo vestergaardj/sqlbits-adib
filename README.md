@@ -11,7 +11,7 @@ https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Chicago-Zip-Code
 
 
 # Demo
-## Create Resource Group (< 1 min)
+## Create Resource Group (< 10 min)
 
 [Create Resource Group](./1-ResourceGroup.md)
 
