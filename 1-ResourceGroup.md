@@ -1,6 +1,6 @@
 # RESOURCE GROUP 
 
-**Portal**
+## Portal
 
 Click: *Create Resource*
  
@@ -13,7 +13,7 @@ Select: *Resource Group* (search for 'resource')
 *Tags*: Owner, State, Purpose
 
 
-## Powershell command
+## Clous Shell (Powershell)
 Click: *Open Cloud Shell*
 
 If asked to configure a storage account for temporary/intermediate data, please accept and continue.
