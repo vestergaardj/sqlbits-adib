@@ -2,6 +2,8 @@
 
 Click *'+'*/Pipeline/Pipeline
 
+Name: *Exec Curated Crimes*
+
 Expand *Move & transform*
 
 Drag object *Data flow* onto canvas
@@ -20,5 +22,5 @@ Click *Add Trigger/Trigger Now*
 
 Click *OK*
 
-The job will be runing for some time, app . 5-6 min.
+The job will be runing for some time, app. a couple of minutes.
 The status can be observed by navigating to *Monitor/Pipeline runs*
