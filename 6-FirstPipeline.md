@@ -1,6 +1,8 @@
 ## Create your first pipeline
 
-Click *'+'*/Pipeline/Pipeline
+Click *+/Pipeline/Pipeline*
+
+Name: *Exec DF Enrich Crime*
 
 Expand *Move & transform*
 
