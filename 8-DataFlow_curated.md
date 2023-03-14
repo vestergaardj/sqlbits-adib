@@ -89,4 +89,8 @@ Click *Data Preview*
 
 Observe data is as good as can be :)
 
+Select: *Settings*
+
+Set *Sampling* to **Diable** 
+
 Click *Publish All*
