@@ -1,4 +1,4 @@
-## Create your first Data Flow ( < 10 min ) (Enriched)
+# Create your first Data Flow ( < 10 min ) (Enriched)
 
 From Azure Portal: Click *Launch Studio* (new window opens)
 
@@ -12,9 +12,11 @@ Click: *OK* button
 
 Rename: Enrich Crime
 
+## Extract
+
 Click Add Source/Add Source
 
-Name: CSV Source
+Name: CSVSource (no funny stuff naming, and no spacing or special characters)
 
 Source Type: Data Set
 
@@ -31,12 +33,15 @@ Dataset: (new) CrimeCSV
     - Select appropritate subscription (housing the storage account)
     - Select Storage Account Name
     - Click *Create*
--   FilePath: data/raw/crime
--   Click *OK*
--   Click *Open*
+-   Click: the arrow to the far right, next to the folder.
+-   Select: From root
+-   Browse until you see the csv files.
+-   Click: OK
+-   FilePath: data/
 -   Check: "First row as header"
+-   Click *OK*
 
-Navigate back to data flow tab
+Navigate back to data flow tab (select the source you just created)
 
 On Source settings, set Sampling = Enable
 
@@ -50,6 +55,8 @@ Click *Refresh*
 
 Observe the expected sample rows
 
+## Transform
+
 Click *'+' after SourceCSV container
 
 Add *Derive Column*
@@ -60,7 +67,7 @@ Open Expression builder
 
 Rename Column Name: *Date*
 
-Set Expression = toDate(left(Date, 10), "MM/dd/yyyy")
+Set Expression = 'toDate(left(Date, 10), "MM/dd/yyyy")'
 
 Click *Save and finish*
 
@@ -94,6 +101,10 @@ Click *Refresh*
 
 Scroll far right, observe Months as numbers
 
+## Load
+
+**Sink**
+
 Click *'+'* after DeriveYearMonth
 
 Add Sink
@@ -106,9 +117,11 @@ Inline Dataset Type: Delta
 
 Linked Service: ADLS_Crime
 
+**Settings**
+
 Click *Settings*
 
-Browse for data/enriched/crime (if the path does not exist, create it in Azure Storage Explorer)
+Browse for data/enriched (if the path does not exist, create it in Azure Storage Explorer)
 
 Click *Mapping*
 
